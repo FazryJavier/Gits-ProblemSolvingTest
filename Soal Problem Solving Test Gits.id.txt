@@ -1,0 +1,79 @@
+Soal Problem Solving Test Gits.id
+
+1. A000124 of Sloane’s OEIS (Score: 20)
+Buatlah sebuah program dengan output sebagai berikut. Input bisa dinamis yang menghasilkan output yang berbeda-beda sesuai input yang dimasukan. Gunakan rumus A000124 of Sloane’s OEIS.
+
+Contoh: 
+- Input 7
+- Output : 1-2-4-7-11-16-22
+
+Soal: 
+Buat fungsi untuk menyelesaikan rumus A000124 of Sloane’s OEIS!
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+2. Dense Ranking (Score: 30)
+GITS sedang bermain permainan arcade, dan dalam setiap permainan GITS ingin naik ke peringkat tertinggi dan juga ingin mengetahui setiap peringkat di setiap permainan. Dalam permainan ini menggunakan skema Dense Ranking​ dan memiliki aturan sebagai berikut:
+- Peringkat pertama dapat diraih oleh pemain yang memiliki skor tertinggi
+- Pemain yang memiliki skor yang sama memiliki peringkat yang sama.
+Contoh :
+
+- Empat pemain memiliki skor tertinggi sebagai berikut 100, 80, 80, dan 70, maka masing-masing pemain itu memiliki rangking 1,2,2 dan 3. Jika GITS memiliki skor 60, 70, 100 setelah pertandingan maka rangking yang didapatkan adalah 4, 3 dan 1.
+
+Sampel Input : 
+
+7
+
+100 100 50 40 40 20 10 
+
+4
+
+5 25 50 120
+
+Sampel Output :
+
+6 4 2 1
+
+Keterangan :
+
+- 7​ adalah bentuk bilangan bulat, angka yang menunjukkan pada jumlah pemain yang ikut serta.
+
+- 100 100 50 40 40 20 10 ​ adalah daftar skor yang diurutkan dari nilai terbesar ke nilai terkecil 
+
+(dalam bentuk array integer).
+
+- 4 ​adalah jumlah permainan yang diikuti oleh GITS, 5 25 50 120 ​adalah skor yang didapatkan oleh GITS.
+
+
+Soal:
+Buat fungsi yang digunakan untuk menyelesaikan permasalahan Dense Ranking!
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+3. Balanced Bracket (Score: 50)
+Sampe 1:
+Input: { [ ( ) ] } 
+Output: YES 
+Penjelasan: Setiap bracket seimbang, antara bracket buka dan bracket tutup. 
+opening : { } 
+opening : [ ] 
+opening : ( } 
+
+Sampel 2: 
+Input: { [ ( ] ) } 
+Output: NO 
+Penjelasan: String { [ ( ] ) } tidak seimbang untuk karakter yang diapit oleh { dan } yaitu [ ( ] ).
+
+Sampel 3: 
+Input: { ( ( [ ] ) [ ] ) [ ] } 
+Output: YES 
+Penjelasan: Setiap bracket seimbang, antara bracket buka dan bracket tutup, meskipun struktur bracket tidak beraturan.
+
+Aturan: 
+1. Tanda bracket / karakter yang diperbolehkan sebagai berikut: ( , ) , { , } , atau [ , ]. 
+2. Bracket bisa dipisahkan dengan atau tanpa whitespace. 
+3. Periksa tanda kurung yang memiliki kecocokan antara bracket buka dan bracket tutup dengan mengembalikan nilai string YES atau NO.
+
+Soal:
+1. Buat fungsi untuk menemukan Balanced Bracket dengan kompleksitas paling rendah!
+2. Berapa ukuran kompleksitas kodinganmu? Jelaskan detail kompleksitas jawaban No.3, cantumkan di README Repo!
