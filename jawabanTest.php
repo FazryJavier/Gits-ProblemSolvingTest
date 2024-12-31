@@ -12,11 +12,13 @@ function soal1($n) {
     return implode(' ', $list);
 }
 
+echo "Nomor 1 : A000124 of Sloane’s OEIS\n";
 echo "Masukkan input: ";
 $input = fgets(STDIN);
 
 if (is_numeric($input) && $input > 0) {
     echo "Hasil barisan: " . soal1((int)$input) . "\n";
+    echo "--------------------\n";
 }
 
 // Nomor 2 : Dense Ranking
@@ -42,6 +44,7 @@ function denseRanking($score, $myscore) {
     return $rankings;
 }
 
+echo "Nomor 2 : Dense Ranking\n";
 echo "Masukkan jumlah pemain: ";
 $playerCount = fgets(STDIN);
 
@@ -56,10 +59,11 @@ $gitsScores = explode(" ", fgets(STDIN));
 
 $rankings = denseRanking($score, $gitsScores);
 echo "Hasil ranking: " . implode(" ", $rankings) . "\n";
+echo "--------------------\n";
 
 
 // Nomor 3 : Balanced Bracket
-function isBalanced($s) {
+function bracket($s) {
     $stack = [];
     $pairs = [
         '(' => ')',
@@ -83,8 +87,9 @@ function isBalanced($s) {
     return empty($stack) ? "YES" : "NO";
 }
 
-echo "Masukkan input: ";
-$input = trim(fgets(STDIN));
+echo "Nomor 3 : Balanced Bracket\n";
+echo "Masukkan bracket: ";
+$nilai = trim(fgets(STDIN));
 
-echo "Output: " . isBalanced($input) . "\n";
+echo "Output: " . bracket($nilai) . "\n";
 ?>
